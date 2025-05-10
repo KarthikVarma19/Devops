@@ -1,3 +1,9 @@
 FROM amazoncorretto:11
-COPY . . 
-ENTRYPOINT [ "java", "sample.java" ]
+
+WORKDIR /app
+
+COPY . .
+
+RUN javac Sample.java
+
+ENTRYPOINT ["java", "Sample"]
