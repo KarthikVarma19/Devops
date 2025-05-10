@@ -2,7 +2,7 @@ FROM amazoncorretto:11
 
 WORKDIR /app
 
-COPY . .
+COPY Sample.java .
 
 RUN javac Sample.java
 
